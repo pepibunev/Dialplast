@@ -1,0 +1,97 @@
+html{
+    position: relative;
+    min-height: 100%;
+}
+body{
+    margin: 0 0 100px;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+nav.site-footer{
+    background-image: url("../images/parket.png");
+    color: black;
+    font-size: 13px;
+    display: block;
+    position: absolute;
+    justify-content: space-around;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    
+       
+}
+.nav-list-footer{
+    list-style-type: none;
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.footer-list-item{
+    display: grid;
+    text-decoration: block;
+    padding-left: 20px;
+}
+.email{
+    display: block;
+    position: absolute;
+    right: 100px;
+    top: 5px;
+    font-size: 20px;
+}
+.facebook{
+    display: block;
+    position: absolute;
+    right: 100px;
+    top: 25px;
+    font-size: 20px;
+}
+.Paragraf{
+    display: grid;
+    text-align: center;
+    font-size: 15px;
+    box-sizing: border-box;
+    border-collapse: collapse;
+}
+
+
+@media all and (max-width:580px){
+    nav.site-footer{
+        position: absolute;
+        font-size: 12px;
+        display: block;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+           
+    }
+    .nav-list-footer{
+        list-style-type: none;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .footer-list-item{
+        display: block;
+        padding-left: 7px;
+    }
+    .email{
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 13px;
+    }
+    .facebook{
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 40px;
+    }
+    .Paragraf{
+        display: none;
+    }
+
+    
+    
+}
