@@ -1,22 +1,10 @@
-html{
-    position: relative;
-    min-height: 100%;
-}
-body{
-    margin: 0 0 100px;
-}
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-.header{
+.navbar{
     background-image: url("../images/parket.png");
     color: black;
     display: flex;
+    position: absolute;
     justify-content: space-around;
     align-items: center;
-    
     width: 100%;
     
 }
@@ -24,20 +12,19 @@ a:hover{
     color: rgba(0, 115, 230, 0.925);
     border-color: rgba(0, 115, 230, 0.925);
 }
+.list-item{
+    text-decoration: none;
+    display: inline-block;
+}
 a{
     font-size: 25px;
     font-weight: 500;
     border-radius: 5px;
     letter-spacing: 1px;
-    border-bottom: 2.5px solid transparent;
-    transition: all 0.3s ease;
-    color: black;
-    text-decoration: none;
-}
-
-.list-item{
-    display: inline-block;
     padding: 20px 10px;
+    text-decoration: none;
+    border-bottom: 2.5px solid transparent;
+    transition: all 0.3s ease; 
 }
 .primary-icon{
     height: 50px;
@@ -51,7 +38,7 @@ a{
     background-color: black;
     margin-bottom: 4px;
 }
-@media (max-width: 580px){
+@media all and (max-width: 580px){
     .menu{
         display: block;
         position: absolute;
@@ -62,10 +49,12 @@ a{
         flex-direction: column;
         position: relative;
     }
-    a{
+    .list-item{
         color: black;
         text-decoration: none;
         font-size: 20px;
+        display: block;
+        border-top: 1px solid rgb(63, 61, 61);
     }
     .nav-list{
         list-style-type: none;
@@ -75,10 +64,7 @@ a{
         display: none;
     
     }
-    .list-item{
-        display: block;
-        border-top: 1px solid rgb(63, 61, 61);
-    }
+
     .active{
         display: block;
     }
