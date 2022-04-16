@@ -1,61 +1,55 @@
-nav.site-footer{
+.footer{
     background-image: url("../images/parket.png");
     color: black;
+    display: flex;
+    text-decoration: none;
     font-size: 13px;
-    display: block;
-    position: absolute;
-    justify-content: space-around;
+    justify-content: space-between;
     bottom: 0;
     right: 0;
     width: 100%;
-    
-       
+
 }
-.nav-list-footer{
-    list-style-type: none;
-    display: block;
+.footer > * {
+    width: 500px;
+}
+.footer-nav{
     padding-top: 5px;
     padding-bottom: 5px;
 }
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
 .footer-list-item{
-    display: block;
-    text-decoration: block;
     padding-left: 20px;
 }
-.email{
+.social{
     display: flex;
     bottom: 0;
-    right: 100px;
-    top: 5px;
+    margin-top: 5px;
     font-size: 20px;
+    justify-content: center;
+    gap: 1.5rem;
 }
-.facebook{
-    display: block;
-    bottom: 0;
-    right: 100px;
-    top: 25px;
-    font-size: 20px;
+p{
 }
-.Paragraf{
-    display: grid;
-    text-align: center;
-    font-size: 15px;
-    box-sizing: border-box;
-    border-collapse: collapse;
+i{
+    color: black;
 }
 
 
 @media all and (max-width:580px){
-    nav.site-footer{
-        position: absolute;
+    .footer{
         font-size: 12px;
-        display: block;
+        display: grid;
         left: 0;
         bottom: 0;
         width: 100%;
            
     }
-    .nav-list-footer{
+    .footer-nav{
         list-style-type: none;
         padding-top: 5px;
         padding-bottom: 5px;
