@@ -2,6 +2,7 @@
     background-image: url("../images/parket.png");
     color: black;
     display: flex;
+    position: absolute;
     justify-content: space-around;
     align-items: center;
     width: 100%;
@@ -37,7 +38,7 @@
     background-color: black;
     margin-bottom: 4px;
 }
-@media all and (max-width: 580px){
+@media screen and (max-width: 580px){
     .menu{
         display: block;
         position: absolute;
@@ -47,6 +48,7 @@
     .navbar{
         flex-direction: column;
         position: relative;
+        width: 100%;
     }
     .list-item{
         color: black;
