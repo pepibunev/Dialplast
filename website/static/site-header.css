@@ -36,19 +36,17 @@
     .menu{
         display: block;
         position: absolute;
-        outline: none;
         border: none;
         background-color: transparent;
         right: 30px;
-        top: 15px;
+        top: 20px;
     }
     .menu-line{
         display: block;
-        width: 20px;
+        width: 30px;
         height: 3px;
         background-color: black;
-        margin-block: 5px;
-        border-radius: 4px;
+        margin-block: 2px;
         transition: transform .5s, opacity .25s;
     }
     .menu.active .menu-line:nth-child(1){
@@ -62,7 +60,7 @@
     }
     .navbar{
         flex-direction: column;
-        position: relative;
+        position: absolute;
         width: 100%;
     }
     .list-item{

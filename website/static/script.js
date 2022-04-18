@@ -6,7 +6,6 @@ toggleButton.addEventListener('click', () => {
     naviList.classList.toggle('active');
     menuMenu.classList.toggle('active');
 })
-menuMenu.addEventListener('click', menuIsActive)
 
 // When the user scrolls the page, execute myFunction
 //window.onscroll = function() {myFunction()};
