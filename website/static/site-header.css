@@ -36,8 +36,10 @@
     .menu{
         display: block;
         position: absolute;
-        cursor: pointer;
-        right: 15px;
+        outline: none;
+        border: none;
+        background-color: transparent;
+        right: 30px;
         top: 15px;
     }
     .menu-line{
@@ -50,15 +52,13 @@
         transition: transform .5s, opacity .25s;
     }
     .menu.active .menu-line:nth-child(1){
-        transform: translateY(13px)
-        rotate(45deg);
+        transform: translateY(5px) rotate(45deg);
     }
     .menu.active .menu-line:nth-child(2){
         opacity: 0;
     }
     .menu.active .menu-line:nth-child(3){
-        transform: translateY(-13px)
-        rotate(-45deg);
+        transform: translateY(-5px) rotate(-45deg);
     }
     .navbar{
         flex-direction: column;
